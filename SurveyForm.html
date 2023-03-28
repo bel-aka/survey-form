@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us"/>
+<head>
+	<meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">
+      Survey Form
+    </h1>
+    <p id="description">
+      Thank you for helping us improve.
+    </p>
+  </header>
+  
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name: 
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" required/></label>
+      <label for="email" id="email-label">Email: 
+      <input type="email" id="email" name="email" placeholder="Enter Your Email" required/></label>
+      <label for="number" id="number-label">Age (years):  
+      <input id="number" type="number" min="15" name="age" max="120" placeholder="Enter Your Age"/></label>
+    </fieldset>
+
+    <fieldset>
+      <label>What was your favorite part of the course?
+        <select id="dropdown" name="favorite">
+          <option value="">(select one)</option>
+          <option value="1">Group work</option>
+          <option value="2">Projects</option>
+          <option value="3">Quizzes</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+
+      <p>What would best describe your student status?</p>
+      <label for="full-time"><input class="inline" type="radio" id="full-time" name="study-status" value="fulltime" />Full time</label>
+      <label for="part-time"><input class="inline" type="radio" id="part-time" name="study-status" value="parttime" />Part-time</label>
+
+      <p>What did you find most challenging during the course?</p>
+      <label for="group-work"><input class="inline" type="checkbox" id="group-work" name="challenge" value="groupwork" />Working in groups</label>
+      <label for="assignments"><input class="inline" type="checkbox" id="assignments" name="challenge" value="assignments" />The assignments</label>
+      <label for="final-project"><input class="inline" type="checkbox" id="final-project" name="challenge" value="final-project" />The final project</label>
+      <label for="whole-course"><input class="inline" type="checkbox" id="whole-course" name="challenge" value="whole-course" />The whole course</label>
+      <label for="other"><input class="inline" type="checkbox" id="other" name="challenge" value="other" />Other</label>
+      <label for="">Please specify:<input type="textarea" id="" name="challenge" value="" /></label>
+
+    </fieldset>
+
+    <fieldset>
+      <label for="more-info">Additional comments: <textarea id="more-info" rows="5" cols="75"></textarea></label>
+    </fieldset>
+
+    <input type="submit" value="Submit" id="submit"/> 
+  
+  </form>
+</body>
+</html>

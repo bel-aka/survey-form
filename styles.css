@@ -1,0 +1,71 @@
+* {
+  font-family: Tahoma;
+}
+
+h1{
+  font-size: 40px;
+}
+
+header {
+  text-align: center;
+  background-color: white;
+  padding: 3vh 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+form {
+  background-color: #f2f2f2;
+  margin: 0 auto;  /* to center the form */
+  max-width: 700px;
+  min-width: 300px;
+  width: 60vw;
+  padding: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 0.5rem 0;
+}
+
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+input, textarea, select {
+  width: 100%;
+  margin: 10px 0 0 0;
+  min-height: 2em;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  background-color: #004aad;
+  color: white;
+  padding: 0.5em;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  min-width: 300px;
+  margin: 1em auto;
+}
+input[type="submit"]:hover {
+  background-color: #033880;
+}
